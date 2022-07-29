@@ -1,17 +1,14 @@
-package com.edu.system.activiti;
+package com.example.activiti.activiti;
 
-import com.edu.system.activiti.listener.ActivitiProcessCompleteListener;
+import com.example.activiti.activiti.listener.ActivitiProcessCompleteListener;
 import com.google.common.collect.Lists;
-import org.activiti.engine.ProcessEngineConfiguration;
 import org.activiti.engine.delegate.event.ActivitiEventListener;
 import org.activiti.engine.delegate.event.ActivitiEventType;
 import org.activiti.spring.SpringProcessEngineConfiguration;
 import org.activiti.spring.boot.ProcessEngineConfigurationConfigurer;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

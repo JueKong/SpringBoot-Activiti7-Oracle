@@ -1,4 +1,4 @@
-package com.edu.system.activiti.listener;
+package com.example.activiti.activiti.listener;
 import org.activiti.engine.delegate.event.ActivitiEvent;
 import org.activiti.engine.delegate.event.ActivitiEventListener;
 import org.springframework.stereotype.Component;
