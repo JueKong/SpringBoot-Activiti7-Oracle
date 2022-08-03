@@ -7,6 +7,7 @@ import org.activiti.engine.repository.ProcessDefinition;
 import org.activiti.engine.task.Task;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
@@ -100,5 +101,24 @@ public interface ActivitiService {
      */
     void backProcess(String taskId, String backProcessTaskId) throws Exception;
 
+    /**
+     * 结束流程
+     * @param taskId
+     */
     void endTask(String taskId);
+
+    /**
+     * 获取流程图
+     * @param processInstanceId
+     * @param response
+     * @throws IOException
+     */
+    void createActivitiImg(String processInstanceId, HttpServletResponse response) throws IOException;
+
+    /**
+     * 获取流程图进度(完成高亮并标记当前节点)
+     * @param processInstanceId
+     * @param response
+     */
+    void getFlowImgByInstanceId(String processInstanceId, HttpServletResponse response) throws IOException ;
 }

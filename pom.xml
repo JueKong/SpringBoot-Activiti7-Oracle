@@ -64,6 +64,18 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!--activiti图片生成依赖-->
+        <dependency>
+            <groupId>org.activiti</groupId>
+            <artifactId>activiti-image-generator</artifactId>
+            <version>7.1.0.M1</version>
+        </dependency>
+        <!--xml-apis依赖-->
+        <dependency>
+            <groupId>xml-apis</groupId>
+            <artifactId>xml-apis</artifactId>
+            <version>1.4.01</version>
+        </dependency>
         <!--swagger依赖-->
         <dependency>
             <groupId>io.swagger</groupId>
@@ -82,7 +94,6 @@
             <artifactId>guava</artifactId>
             <version>29.0-android</version>
         </dependency>
-
     </dependencies>
 
     <build>

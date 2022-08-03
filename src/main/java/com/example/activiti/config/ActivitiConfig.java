@@ -1,6 +1,6 @@
-package com.example.activiti.activiti;
+package com.example.activiti.config;
 
-import com.example.activiti.activiti.listener.ActivitiProcessCompleteListener;
+import com.example.activiti.config.listener.ActivitiProcessCompleteListener;
 import com.google.common.collect.Lists;
 import org.activiti.engine.delegate.event.ActivitiEventListener;
 import org.activiti.engine.delegate.event.ActivitiEventType;
